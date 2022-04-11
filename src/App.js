@@ -1,14 +1,15 @@
-import React, { Component } from 'react'
-import './App.css';
+import { Outlet, Link } from 'react-router-dom';
 
-export class App extends Component {
-  render() {
-    return (
-      <div>
-        <h1>React Router</h1>
-        
-      </div>
-    )
-  }
+export default function App() {
+  return (
+    <div>
+      <h1>REACT ROUTER!</h1>
+      <nav style={{ borderBottom: "solid 1px", paddingBottom: "1rem", }}>
+        <Link to="/home">Home</Link> |{" "}
+        <Link to="/about">About</Link> |{" "}
+        <Link to="/contact">Contact</Link>
+      </nav>
+      <Outlet />
+    </div>
+  );
 }
-export default App;
