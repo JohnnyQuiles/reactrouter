@@ -1,10 +1,9 @@
 import { render } from 'react-dom';
 import { BrowserRouter, Routes, Route, } from 'react-router-dom';
 import App from './App';
-import Home from './Home';
-import About from './About';
-import Contact from './Contact';
-
+import Home from './Pages/Home';
+import About from './Pages/About';
+import Contact from './Pages/Contact';
 
 render(
   <BrowserRouter>
