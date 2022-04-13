@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 
 function NavBar() {
-    return(
+    return (
     <div>
         <Link to="/">Index</Link> |{" "}
         <Link to="/home">Home</Link> |{" "}
